@@ -1,0 +1,27 @@
+==========================================
+SLURM_JOB_ID = 9528709
+SLURM_NODELIST = cpu-8-87
+==========================================
+
+############### Job 9528709 summary ###############
+Name                : allocation
+User                : mttran1
+Account             : ctbrowngrp
+Partition           : 
+Nodes               : cpu-8-87
+Cores               : 12
+GPUs                : 0
+State               : FAILED
+ExitCode            : 2:0
+Submit              : 2024-02-05T17:56:28
+Start               : 2024-02-05T17:56:29
+End                 : 2024-02-05T17:56:30
+Reserved walltime   : 00:00:00
+Used walltime       : 00:00:01
+Used CPU time       : 00:00:00
+% User (Computation): 78.21%
+% System (I/O)      :  0.00%
+Mem reserved        : 0
+Max Mem used        : 36.00K (cpu-8-87)
+Max Disk Write      : 0.00  (cpu-8-87)
+Max Disk Read       : 0.00  (cpu-8-87)

@@ -1,0 +1,27 @@
+==========================================
+SLURM_JOB_ID = 9531023
+SLURM_NODELIST = cpu-8-87
+==========================================
+
+############### Job 9531023 summary ###############
+Name                : SRR13201272
+User                : mttran1
+Account             : ctbrowngrp
+Partition           : med
+Nodes               : cpu-8-87
+Cores               : 24
+GPUs                : 0
+State               : CANCELLED,CANCELLED by 1328250
+ExitCode            : 0:0
+Submit              : 2024-02-06T20:52:36
+Start               : 2024-02-06T20:52:38
+End                 : 2024-02-06T20:52:55
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:00:17
+Used CPU time       :   00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 62G
+Max Mem used        : --
+Max Disk Write      : --
+Max Disk Read       : --

@@ -1,0 +1,13 @@
+Unloading openmpi/4.1.5
+Unloading slurm/23.02.7
+Loading slurm/23.02.7
+Loading openmpi/4.1.5
+Loading conda/base/latest
+[K
+== This is sourmash version 4.8.5. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kloaded 1 gather results from 'SRR13201271.csv'.
+[Kloaded results for 1 queries from 1 gather CSVs
+[KStarting summarization up rank(s): strain, species, genus, family, order, class, phylum, superkingdom 
+[Ksaving 'krona' output to 'SRR13201271_tax2.krona.tsv'.

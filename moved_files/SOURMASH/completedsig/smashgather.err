@@ -1,0 +1,8 @@
+Unloading conda/base/latest
+Unloading openmpi/4.1.5
+Unloading slurm/23.02.7
+Loading slurm/23.02.7
+Loading openmpi/4.1.5
+Loading conda/base/latest
+/var/spool/slurmd/job9528697/slurm_script: line 20: syntax error near unexpected token `newline'
+/var/spool/slurmd/job9528697/slurm_script: line 20: `sourmash tax metagenome --gather-csv SRR13201271.csv --taxonomy gtdb-rs214.lineages.csv --output-format krona --rank species >'

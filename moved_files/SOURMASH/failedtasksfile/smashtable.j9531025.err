@@ -1,0 +1,57 @@
+Unloading conda/base/latest
+Unloading openmpi/4.1.5
+Unloading slurm/23.02.7
+Loading slurm/23.02.7
+Loading openmpi/4.1.5
+Loading conda/base/latest
+/var/spool/slurmd/job9531025/slurm_script: line 19: cd: mttran1: Not a directory
+[K
+== This is sourmash version 4.8.5. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting specified query k=31
+[Kloaded query: SRR13201272... (k=31, DNA)
+[Kloading from 'gtdb-rs214-reps.k31.zip'...[K--
+[Kloaded 85205 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 85205 remain.
+[KStarting prefetch sweep across databases.
+[KPrefetch found 6992 signatures with overlap >= 50.0 kbp.
+[KDoing gather to generate minimum metagenome cover.
+/var/spool/slurmd/job9531025/slurm_script: line 21: 199395 Killed                  sourmash gather -k 31 SRR13201272.sig gtdb-rs214-reps.k31.zip -o SRR13201272_gather.csv
+/var/spool/slurmd/job9531025/slurm_script: line 24: cd: mttran1: Not a directory
+[K
+== This is sourmash version 4.8.5. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+Traceback (most recent call last):
+  File "/home/mttran1/.conda/envs/smash/bin/sourmash", line 11, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/site-packages/sourmash/__main__.py", line 19, in main
+    retval = mainmethod(args)
+             ^^^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/site-packages/sourmash/cli/tax/metagenome.py", line 102, in main
+    return sourmash.tax.__main__.metagenome(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/site-packages/sourmash/tax/__main__.py", line 93, in metagenome
+    query_gather_results = tax_utils.check_and_load_gather_csvs(gather_csvs, tax_assign, force=args.force,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/site-packages/sourmash/tax/tax_utils.py", line 709, in check_and_load_gather_csvs
+    these_results, header = load_gather_results(gather_csv, tax_assign, 
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/site-packages/sourmash/tax/tax_utils.py", line 658, in load_gather_results
+    with sourmash_args.FileInputCSV(gather_csv) as r:
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/site-packages/sourmash/sourmash_args.py", line 547, in FileInputCSV
+    with gzip.open(filename, "rt", newline="", encoding=encoding) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/gzip.py", line 61, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mttran1/.conda/envs/smash/lib/python3.12/gzip.py", line 192, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'SRR13201272_gather.csv'
+slurmstepd: error: Detected 1 oom_kill event in StepId=9531025.batch. Some of the step tasks have been OOM Killed.

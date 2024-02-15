@@ -1,0 +1,20 @@
+Unloading openmpi/4.1.5
+Unloading slurm/23.02.7
+Loading slurm/23.02.7
+Loading openmpi/4.1.5
+Loading conda/base/latest
+/var/spool/slurmd/job9533650/slurm_script: line 19: cd: mttran1: No such file or directory
+[K
+== This is sourmash version 4.8.5. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting specified query k=31
+[Kloaded query: SRR13201272... (k=31, DNA)
+[Kloading from 'gtdb-rs214-reps.k31.zip'...[K--
+[Kloaded 85205 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 85205 remain.
+[KStarting prefetch sweep across databases.
+[KPrefetch found 6992 signatures with overlap >= 50.0 kbp.
+[KDoing gather to generate minimum metagenome cover.
+/var/spool/slurmd/job9533650/slurm_script: line 21: 3124883 Killed                  sourmash gather -k 31 SRR13201272.sig gtdb-rs214-reps.k31.zip -o SRR13201272_gather.csv
+slurmstepd: error: Detected 1 oom_kill event in StepId=9533650.batch. Some of the step tasks have been OOM Killed.

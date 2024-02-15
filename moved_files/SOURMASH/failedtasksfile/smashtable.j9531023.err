@@ -1,0 +1,12 @@
+Unloading conda/base/latest
+Unloading openmpi/4.1.5
+Unloading slurm/23.02.7
+Loading slurm/23.02.7
+Loading openmpi/4.1.5
+Loading conda/base/latest
+/var/spool/slurmd/job9531023/slurm_script: line 19: cd: mttran1: Not a directory
+[K
+== This is sourmash version 4.8.5. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+slurmstepd: error: *** JOB 9531023 ON cpu-8-87 CANCELLED AT 2024-02-06T20:52:55 ***
